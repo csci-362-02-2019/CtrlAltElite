@@ -1,4 +1,4 @@
-CONTAININGDIRECTORY="`dirname \"$0\")`/"
+CONTAININGDIRECTORY="`dirname \"$0\"`/"
 FILE="./currDirectory.html"
 rm -f $FILE
 DIRECTORYCONTENTS="$(ls $CONTAININGDIRECTORY)"
