@@ -1,3 +1,5 @@
+#!/bin/bash
+
 CONTAININGDIRECTORY="`dirname \"$0\"`/"
 FILE="./currDirectory.html"
 rm -f $FILE
