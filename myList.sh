@@ -1,5 +1,8 @@
-DIRECTORY="$(ls)"
-echo "<html>$DIRECTORY</html>" >> currDirectory.html
-apt-get install open
-rm -f ./currDirectory.html
-xopen ./currDirectory.html
+#!/bin/bash
+
+CONTAININGDIRECTORY="`dirname \"$0\"`/"
+FILE="./currDirectory.html"
+rm -f $FILE
+DIRECTORYCONTENTS="$(ls $CONTAININGDIRECTORY)"
+echo "<html>$DIRECTORYCONTENTS</html>" >> $FILE
+xdg-open $FILE
