@@ -1,0 +1,8 @@
+
+echo ""
+cd ..
+javac project/*.java
+input="testCases/testCase1.txt"
+< "$input"
+output=$(java project.GCDDriver)
+
