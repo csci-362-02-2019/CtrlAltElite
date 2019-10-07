@@ -1,8 +1,9 @@
 
 
 1
-The ability to calculate the greatest common divisor between two positive integers where ther first is greater than the second
-Math Operations
+The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second
+MathOps
 gcd
-30 12
+30
+12
 6

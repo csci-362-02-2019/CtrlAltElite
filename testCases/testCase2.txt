@@ -4,5 +4,6 @@
 The ability to calculate the greatest common divisor betwee two identical integers
 Math Operations
 gcd
-20 20
+20
+20
 20
