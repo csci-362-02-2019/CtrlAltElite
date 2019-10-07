@@ -4,5 +4,6 @@
 The ability to calculate the greatest common divisor between a negative integer and a positive integer
 Math Operations
 gcd
--10, 17
+-10
+17
 1

@@ -4,5 +4,6 @@
 The ability to calculate the greatest common divisor between 0 and another integer.
 Math Operations
 gcd
-0 50
+0
+50
 undefined
