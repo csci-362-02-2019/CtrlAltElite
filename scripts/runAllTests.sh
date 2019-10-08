@@ -17,3 +17,4 @@ for fileName in testCases/testCase*.txt; do
 	echo "Result: $result"
 	echo ""
 done
+
