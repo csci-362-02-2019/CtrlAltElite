@@ -11,4 +11,10 @@ for fileName in testCases/testCase*.txt; do
 	param1=`sed '8q;d' $fileName`
 	param2=`sed '9q;d' $fileName`
 	oracle=`sed '10q;d' $fileName`
+	result=`java $driver "$param1" "$param2"`
+	echo "Test Case: $fileName"
+	echo "Oracle: $oracle"
+	echo "Result: $result"
+	echo ""
 done
+
