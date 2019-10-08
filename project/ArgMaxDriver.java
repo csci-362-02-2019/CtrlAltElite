@@ -1,19 +1,21 @@
 package project;
 
 /*
-Driver for gcd method
+Driver for argMax method
  */
+import java.util.List;
 
-public class GCDDriver {
+
+public class ArgMaxDriver {
 
     public static void main(String[] args) {
         if (args.length < 2 || args.length > 2) {
             System.out.println(TestingConstants.ERROR_MESSAGE);
         } else {
             try {
-                int num1 = Integer.parseInt(args[0]);
-                int num2 = Integer.parseInt(args[1]);
-                System.out.println(MathOps.gcd(num1, num2));
+                double[] entries = TestingMethods.parseDoubleArray(args[0]);
+                List<Integer> indices = TestingMethods.parseIntList(args[1]);
+                System.out.println(MathOps.argMaxDouble(entries, indices));
             } catch (Exception e) {
                 System.out.println(TestingConstants.ERROR_MESSAGE);
             }
