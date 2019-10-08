@@ -7,7 +7,8 @@ for fileName in testCases/testCase*.txt; do
 	requirement=`sed '4q;d' $fileName`
 	component=`sed '5q;d' $fileName`
 	method=`sed '6q;d' $fileName`
-	param1=`sed '7q;d' $fileName`
-	param2=`sed '8q;d' $fileName`
-	oracle=`sed '9q;d' $fileName`
+	driver=`sed '7q;d' $fileName`
+	param1=`sed '8q;d' $fileName`
+	param2=`sed '9q;d' $fileName`
+	oracle=`sed '10q;d' $fileName`
 done
