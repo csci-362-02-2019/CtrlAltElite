@@ -1,0 +1,10 @@
+
+
+8
+the ability to find the index of the largest number in an array where the largest number is located towards, the center, the array contains negatives, and the order is scrambled
+MathOps
+argMax
+project.ArgMaxDriver
+[3 4 1 100 0 -50 80]
+[6 3 4 1 2 0 5]
+3
