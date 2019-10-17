@@ -2,6 +2,11 @@
 cd "`dirname \"$0\"`/"..
 javac project/*.java
 
+FILE="./results.html"
+
+rm -r $FILE
+echo "<h2>TEST REPORT</h2><br/><br/>" >> $FILE
+echo "<table border='1''><tr><th>Test Case</th><th>Method</th><th>Oracle</th><th>Result</th><th>PASS/FAIL</th></tr>" >> $FILE
 for fileName in testCases/testCase*.txt; do
 	testID=`sed '3q;d' $fileName`
 	requirement=`sed '4q;d' $fileName`
@@ -12,9 +17,21 @@ for fileName in testCases/testCase*.txt; do
 	param2=`sed '9q;d' $fileName`
 	oracle=`sed '10q;d' $fileName`
 	result=`java $driver "$param1" "$param2"`
-	echo "Test Case: $fileName"
-	echo "Oracle: $oracle"
-	echo "Result: $result"
-	echo ""
+	echo "<tr>" >> $FILE
+	echo "<td>$fileName</td>" >> $FILE
+	echo "<td>$method</td>" >> $FILE
+	echo "<td>$oracle</td>" >> $FILE
+	echo "<td>$result</td>" >> $FILE
+	if [ $oracle == $result ]; then 
+		echo "<td>PASS</td>" >> $FILE
+	else
+		echo "<td>FAIL</td>" >> $FILE
+	fi
+	echo "</tr>" >> $FILE
+
 done
+echo "</table>" >> $FILE
+xdg-open $FILE
+
+
 
