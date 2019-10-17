@@ -1,7 +1,7 @@
 
 
 6
-The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second
+the ability to find the index of the largest number in an array where the first index contains the smallest number
 MathOps
 argMax
 project.ArgMaxDriver
