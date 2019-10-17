@@ -6,7 +6,7 @@ FILE="./results.html"
 
 rm -r $FILE
 echo "<h2>TEST REPORT</h2><br/><br/>" >> $FILE
-echo "<table border='1''><tr><th>Test Case</th><th>Method</th><th>Oracle</th><th>Result</th><th>PASS/FAIL</th></tr>" >> $FILE
+echo "<table border='1''><tr><th>Test Case</th><th>Method</th><th>Arguments</th><th>Oracle</th><th>Result</th><th>PASS/FAIL</th></tr>" >> $FILE
 for fileName in testCases/testCase*.txt; do
 	testID=`sed '3q;d' $fileName`
 	requirement=`sed '4q;d' $fileName`
@@ -18,8 +18,9 @@ for fileName in testCases/testCase*.txt; do
 	oracle=`sed '10q;d' $fileName`
 	result=`java $driver "$param1" "$param2"`
 	echo "<tr>" >> $FILE
-	echo "<td>$fileName</td>" >> $FILE
+	echo "<td>$testID</td>" >> $FILE
 	echo "<td>$method</td>" >> $FILE
+	echo "<td>$param1, $param2</td>" >> $FILE
 	echo "<td>$oracle</td>" >> $FILE
 	echo "<td>$result</td>" >> $FILE
 	if [ $oracle == $result ]; then 
