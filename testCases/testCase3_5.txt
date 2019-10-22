@@ -1,0 +1,10 @@
+
+
+3.5
+verifying that an error is thrown when no indices are being checked
+MathOps
+argMin
+project.ArgMinDriver
+[3 4 1 100 0 -50 80]
+[]
+ERROR
