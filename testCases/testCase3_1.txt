@@ -1,0 +1,10 @@
+
+
+3.1
+the ability to find the index of the smallest number in an array where the smallest number is located towards the center, the array contains negatives, and the order is scrambled
+MathOps
+argMin
+project.ArgMinDriver
+[3 4 1 100 0 -50 80]
+[6 3 4 1 2 0 5]
+5

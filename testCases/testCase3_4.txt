@@ -1,0 +1,10 @@
+
+
+3.4
+the ability to find the index of the smallest number in an array where the smallest number is located at the back, the order is descending, and all numbers are negative
+MathOps
+argMin
+project.ArgMinDriver
+[-1 -2 -3 -4 -5]
+[0 1 2 3 4]
+4

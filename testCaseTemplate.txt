@@ -11,4 +11,5 @@ Line 9: Expected outcomes
 
 Format of Parameters/Input:
 Lists/Arrays will be in the form [x1 x2 ... xn]: wrapped in square brackets and separated by whitespace
-Each method takes as input, two parameters. The first parameter will go on line 6 and the second on line 7
+Each method takes as input, one or two parameters. The first parameter will go on line 6 and the second on line 7. 
+If the method only takes one parameter then line 7 must be left empty.
