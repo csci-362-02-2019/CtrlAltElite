@@ -1,6 +1,6 @@
 
 
-8
+2.3
 the ability to find the index of the largest number in an array where the largest number is located towards, the center, the array contains negatives, and the order is scrambled
 MathOps
 argMax
