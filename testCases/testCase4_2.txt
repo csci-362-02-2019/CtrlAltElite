@@ -1,0 +1,10 @@
+
+
+4.2
+The ability to calculate the least common multiple between two identical integers
+Math Operations
+lcm
+project.LCMDriver
+20
+20
+20
