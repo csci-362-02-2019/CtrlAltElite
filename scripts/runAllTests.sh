@@ -16,7 +16,14 @@ for fileName in testCases/testCase*.txt; do
 	param1=`sed '8q;d' $fileName`
 	param2=`sed '9q;d' $fileName`
 	oracle=`sed '10q;d' $fileName`
-	result=`java $driver "$param1" "$param2"`
+	
+	if [ -z '$param2' ]
+	then
+		result=`java $driver "$param1"`
+	else
+		result=`java $driver "$param1" "$param2"`
+	fi
+
 	echo "<tr>" >> $FILE
 	echo "<td>$testID</td>" >> $FILE
 	echo "<td>$method</td>" >> $FILE
@@ -33,6 +40,4 @@ for fileName in testCases/testCase*.txt; do
 done
 echo "</table>" >> $FILE
 xdg-open $FILE
-
-
 
