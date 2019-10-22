@@ -1,0 +1,10 @@
+
+
+4.4
+The ability to calculate the least common multiple in an edge case scenario that verifies correctness in the most extreme of cases
+Math Operations
+lcm
+project.LCMDriver
+2147483647
+-2147483647
+2147483647
