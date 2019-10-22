@@ -1,6 +1,6 @@
 
 
-9
+2.4
 The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second
 MathOps
 argMax

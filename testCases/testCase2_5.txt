@@ -1,10 +1,10 @@
 
 
-1
+2.5
 The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second
 MathOps
-gcd
-project.GCDDriver
-30
-12
-6
+argMax
+project.ArgMaxDriver
+[-45 13 16 57 11]
+[4 0 1]
+1

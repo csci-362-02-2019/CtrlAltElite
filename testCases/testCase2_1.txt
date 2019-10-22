@@ -1,6 +1,6 @@
 
 
-6
+2.1
 the ability to find the index of the largest number in an array where the first index contains the smallest number
 MathOps
 argMax
