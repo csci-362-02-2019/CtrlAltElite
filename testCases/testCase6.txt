@@ -1,7 +1,7 @@
 
 
 6
-the ability to find the index of the largest number in an array where the first index contains the smallest number
+the ability to find the index of the largest number in an array where the last index contains the largest number and the order is ascending
 MathOps
 argMax
 project.ArgMaxDriver
