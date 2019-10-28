@@ -1,7 +1,8 @@
 <h2>TEST REPORT</h2><br/><br/>
-<table border='1''><tr><th>Test Case</th><th>Method</th><th>Arguments</th><th>Oracle</th><th>Result</th><th>PASS/FAIL</th></tr>
+<table border='1''><tr><th>Test Case</th><th width='500'>Requirement</th><th>Method</th><th>Arguments</th><th>Oracle</th><th>Result</th><th>PASS/FAIL</th></tr>
 <tr>
 <td>1.1</td>
+<td>The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second</td>
 <td>gcd</td>
 <td>30, 12</td>
 <td>6</td>
@@ -10,6 +11,7 @@
 </tr>
 <tr>
 <td>1.2</td>
+<td>The ability to calculate the greatest common divisor betwee two identical integers</td>
 <td>gcd</td>
 <td>20, 20</td>
 <td>20</td>
@@ -18,6 +20,7 @@
 </tr>
 <tr>
 <td>1.3</td>
+<td>The ability to calculate the greatest common divisor between 0 and another integer.</td>
 <td>gcd</td>
 <td>0, 50</td>
 <td>undefined</td>
@@ -26,6 +29,7 @@
 </tr>
 <tr>
 <td>1.4</td>
+<td>The ability to calculate the greatest common divisor in an edge case scenario that verifies correctness in the most extreme of cases</td>
 <td>gcd</td>
 <td>2147483647, 5</td>
 <td>1</td>
@@ -34,6 +38,7 @@
 </tr>
 <tr>
 <td>1.5</td>
+<td>The ability to calculate the greatest common divisor between a negative integer and a positive integer</td>
 <td>gcd</td>
 <td>-10, 17</td>
 <td>1</td>
@@ -42,6 +47,7 @@
 </tr>
 <tr>
 <td>2.1</td>
+<td>the ability to find the index of the largest number in an array where the last index contains the largest number and the order is ascending</td>
 <td>argMax</td>
 <td>[1 2 3 4 5], [0 1 2 3 4]</td>
 <td>4</td>
@@ -50,6 +56,7 @@
 </tr>
 <tr>
 <td>2.2</td>
+<td>the ability to find the index of the largest number in an array where the first index contains the largest number and the order is descending</td>
 <td>argMax</td>
 <td>[500 4 3 2 1 0], [0 1 2 3 4 5]</td>
 <td>0</td>
@@ -58,6 +65,7 @@
 </tr>
 <tr>
 <td>2.3</td>
+<td>the ability to find the index of the largest number in an array where the largest number is located towards, the center, the array contains negatives, and the order is scrambled</td>
 <td>argMax</td>
 <td>[3 4 1 100 0 -50 80], [6 3 4 1 2 0 5]</td>
 <td>3</td>
@@ -66,6 +74,7 @@
 </tr>
 <tr>
 <td>2.4</td>
+<td>The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second</td>
 <td>argMax</td>
 <td>[15 16 17 18 19], []</td>
 <td>ERROR</td>
@@ -74,6 +83,7 @@
 </tr>
 <tr>
 <td>2.5</td>
+<td>The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second</td>
 <td>argMax</td>
 <td>[-45 13 16 57 11], [4 0 1]</td>
 <td>1</td>
@@ -82,6 +92,7 @@
 </tr>
 <tr>
 <td>3.1</td>
+<td>the ability to find the index of the smallest number in an array where the smallest number is located towards the center, the array contains negatives, and the order is scrambled</td>
 <td>argMin</td>
 <td>[3 4 1 100 0 -50 80], [6 3 4 1 2 0 5]</td>
 <td>5</td>
@@ -90,6 +101,7 @@
 </tr>
 <tr>
 <td>3.2</td>
+<td>the ability to find the index of the smallest number in an array where the smallest number is located at the front, the array contains negatives, and the order is scrambled</td>
 <td>argMin</td>
 <td>[-10000000 4 1 100 0 -50 80], [6 3 4 1 2 0 5]</td>
 <td>0</td>
@@ -98,6 +110,7 @@
 </tr>
 <tr>
 <td>3.3</td>
+<td>the ability to find the index of the smallest number in an array where the smallest number is located at the front, the order is ascending, and all numbers are negative</td>
 <td>argMin</td>
 <td>[-5 -4 -3 -2 -1], [0 1 2 3 4]</td>
 <td>0</td>
@@ -106,6 +119,7 @@
 </tr>
 <tr>
 <td>3.4</td>
+<td>the ability to find the index of the smallest number in an array where the smallest number is located at the back, the order is descending, and all numbers are negative</td>
 <td>argMin</td>
 <td>[-1 -2 -3 -4 -5], [0 1 2 3 4]</td>
 <td>4</td>
@@ -114,6 +128,7 @@
 </tr>
 <tr>
 <td>3.5</td>
+<td>verifying that an error is thrown when no indices are being checked</td>
 <td>argMin</td>
 <td>[3 4 1 100 0 -50 80], []</td>
 <td>ERROR</td>
@@ -122,6 +137,7 @@
 </tr>
 <tr>
 <td>4.1</td>
+<td>The ability to calculate the least common multiple between two positive integers where the first is greater than the second</td>
 <td>lcm</td>
 <td>30, 12</td>
 <td>60</td>
@@ -130,6 +146,7 @@
 </tr>
 <tr>
 <td>4.2</td>
+<td>The ability to calculate the least common multiple between two identical integers</td>
 <td>lcm</td>
 <td>20, 20</td>
 <td>20</td>
@@ -138,6 +155,7 @@
 </tr>
 <tr>
 <td>4.3</td>
+<td>The ability to calculate the least common multiple between 0 and another integer.</td>
 <td>lcm</td>
 <td>0, 50</td>
 <td>undefined</td>
@@ -146,6 +164,7 @@
 </tr>
 <tr>
 <td>4.4</td>
+<td>The ability to calculate the least common multiple in an edge case scenario that verifies correctness in the most extreme of cases with one positive and one negative</td>
 <td>lcm</td>
 <td>2147483647, -2147483647</td>
 <td>2147483647</td>
@@ -154,6 +173,7 @@
 </tr>
 <tr>
 <td>4.5</td>
+<td>The ability to calculate the greatest common divisor between two negative integers</td>
 <td>lcm</td>
 <td>-10, -1000</td>
 <td>1000</td>
