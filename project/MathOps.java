@@ -135,7 +135,7 @@ public final class MathOps {
             machEps /= 2.0d;
         } while ((1.0 + (machEps / 2.0)) != 1.0);
         return machEps;
-    
+    }
     /**
      * Double values are not precise due to the way they are stored (See IEEE
      * 754). In order to compare doubles, one has to approximate the equation

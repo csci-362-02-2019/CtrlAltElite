@@ -3,11 +3,11 @@
 <tr>
 <td>1.1</td>
 <td>The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second</td>
-<td>gcd</td>
+<td>approxEqual</td>
 <td>30, 12</td>
 <td>6</td>
-<td>6</td>
-<td>PASS</td>
+<td>false</td>
+<td>FAIL</td>
 </tr>
 <tr>
 <td>1.2</td>
@@ -178,6 +178,51 @@
 <td>-10, -1000</td>
 <td>1000</td>
 <td>1000</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>The ability to calculate whether or not two numbers that are equal are approximately equal</td>
+<td>approxEqual</td>
+<td>1, 1</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>The ability to calculate whether or not two numbers are approximately equal when the first is very slightly greater than the second and the two numbers are approximately equal</td>
+<td>approxEqual</td>
+<td>1.1E-17, 1E-17</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>5.3</td>
+<td>The ability to calculate whether or not two numbers are approximately equal when the second is very slightly greater than the first and the two numbers are approximately equal</td>
+<td>approxEqual</td>
+<td>1E-17, 1.1E-17</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>5.4</td>
+<td>The ability to calculate whether or not two numbers are approximately equal when the first is greater than the second and the two numbers are not approximately equal</td>
+<td>approxEqual</td>
+<td>1E17, 1E-17</td>
+<td>false</td>
+<td>false</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>5.5</td>
+<td>The ability to calculate whether or not two numbers are approximately equal when the second is greater than the first and the two numbers are not approximately equal</td>
+<td>approxEqual</td>
+<td>-1E17, 1E-17</td>
+<td>false</td>
+<td>false</td>
 <td>PASS</td>
 </tr>
 </table>

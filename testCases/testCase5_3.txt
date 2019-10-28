@@ -1,0 +1,10 @@
+
+
+5.3
+The ability to calculate whether or not two numbers are approximately equal when the second is very slightly greater than the first and the two numbers are approximately equal
+MathOps
+approxEqual
+project.ApproxEqualDriver
+1E-17
+1.1E-17
+true

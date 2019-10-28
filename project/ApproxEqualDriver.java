@@ -11,8 +11,8 @@ public class ApproxEqualDriver {
             System.out.println(TestingConstants.ERROR_MESSAGE);
         } else {
             try {
-                int num1 = Integer.parseInt(args[0]);
-                int num2 = Integer.parseInt(args[1]);
+                double num1 = Double.parseDouble(args[0]);
+                double num2 = Double.parseDouble(args[1]);
                 System.out.println(MathOps.approxEqual(num1, num2));
             } catch (Exception e) {
                 System.out.println(TestingConstants.ERROR_MESSAGE);
