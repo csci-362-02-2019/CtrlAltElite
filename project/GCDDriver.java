@@ -7,7 +7,7 @@ Driver for gcd method
 public class GCDDriver {
 
     public static void main(String[] args) {
-        if (args.length < 2 || args.length > 2) {
+        if (args.length != 2) {
             System.out.println(TestingConstants.ERROR_MESSAGE);
         } else {
             try {

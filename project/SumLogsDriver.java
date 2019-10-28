@@ -8,7 +8,7 @@ Driver for sumLogs method
 public class SumLogsDriver {
 
     public static void main(String[] args) {
-        if (args.length < 1 || args.length > 1) {
+        if (args.length != 1) {
             System.out.println(TestingConstants.ERROR_MESSAGE);
         } else {
             try {
