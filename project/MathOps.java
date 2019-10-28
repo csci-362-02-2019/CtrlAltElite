@@ -31,6 +31,8 @@ public final class MathOps {
     private MathOps() {
         // do not instantiate
     }
+    
+    public static final double MACHINE_EPSILON = MathOps.calculateMachineEpsilon();
 
     /**
      * Calculates the maximum entry of an array, where only specific indices are
@@ -119,17 +121,32 @@ public final class MathOps {
     public static int lcm(final int arg0, final int arg1) {
         return Math.abs(arg0 * arg1) / MathOps.gcd(arg0, arg1);
     }
-
-    public static double sumLogs(Collection<Double> log_values) {
-        Iterator<Double> it = log_values.iterator();
-        Double s = it.next();
-        while (it.hasNext()) {
-            Double k = it.next();
-            Double x = Math.max(s, k);
-            Double y = Math.min(s, k);
-            double c = y - x;
-            s = x + Math.log(1 + Math.exp(c));
-        }
-        return s;
+    
+        /**
+     * Machine epsilon. For further information see <a
+     * href="http://en.wikipedia.org/wiki/Machine_epsilon"
+     * >http://en.wikipedia.org/wiki/Machine_epsilon</a>.
+     *
+     * @return machine epsilon
+     */
+    public static double calculateMachineEpsilon() {
+        double machEps = 1.0d;
+        do {
+            machEps /= 2.0d;
+        } while ((1.0 + (machEps / 2.0)) != 1.0);
+        return machEps;
+    
+    /**
+     * Double values are not precise due to the way they are stored (See IEEE
+     * 754). In order to compare doubles, one has to approximate the equation
+     * using a certain threshold. This method provides double comparison with
+     * using a reasonable threshold.
+     *
+     * @param dbl1 Double value
+     * @param dbl2 Double value
+     * @return true if values are equal up to a certain threshold
+     */
+    public static boolean approxEqual(final double dbl1, final double dbl2) {
+        return Math.abs(dbl1 - dbl2) <= MathOps.MACHINE_EPSILON;
     }
 }
