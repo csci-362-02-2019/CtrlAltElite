@@ -5,6 +5,10 @@ javac project/*.java
 FILE="./results.html"
 
 rm -r $FILE 
+echo "<html>" >> $FILE
+echo "<style>" >> $FILE
+echo `cat style.css` >> $FILE
+echo "</style> " >> $FILE
 echo "<h2>TEST REPORT</h2><br/><br/>" >> $FILE
 echo "<table border='1''><tr><th>Test Case</th><th width='500'>Requirement</th><th>Method</th><th>Arguments</th><th>Oracle</th><th>Result</th><th>PASS/FAIL</th></tr>" >> $FILE
 for fileName in testCases/testCase*.txt; do
@@ -36,6 +40,7 @@ for fileName in testCases/testCase*.txt; do
 
 done
 echo "</table>" >> $FILE
+echo "</html>" >> $FILE
 
 xdg-open $FILE
 
