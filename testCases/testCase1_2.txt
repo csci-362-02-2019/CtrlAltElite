@@ -2,7 +2,7 @@
 
 1.2
 The ability to calculate the greatest common divisor betwee two identical integers
-Math Operations
+MathOps
 gcd
 project.GCDDriver
 20
