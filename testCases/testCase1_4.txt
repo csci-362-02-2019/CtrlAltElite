@@ -2,7 +2,7 @@
 
 1.4
 The ability to calculate the greatest common divisor in an edge case scenario that verifies correctness in the most extreme of cases
-Math Operations
+MathOps
 gcd
 project.GCDDriver
 2147483647

@@ -2,7 +2,7 @@
 
 1.3
 The ability to calculate the greatest common divisor between 0 and another integer.
-Math Operations
+MathOps
 gcd
 project.GCDDriver
 0
