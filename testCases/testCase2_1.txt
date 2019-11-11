@@ -4,7 +4,7 @@
 the ability to find the index of the largest number in an array where the last index contains the largest number and the order is ascending
 MathOps
 argMax
-project.ArgMaxDriver
+CtrlAltElite.testCaseExecutables.ArgMaxDriver
 [1 2 3 4 5]
 [0 1 2 3 4]
 4

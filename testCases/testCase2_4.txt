@@ -4,7 +4,7 @@
 The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second
 MathOps
 argMax
-project.ArgMaxDriver
+CtrlAltElite.testCaseExecutables.ArgMaxDriver
 [15 16 17 18 19]
 []
 ERROR

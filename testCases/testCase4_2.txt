@@ -4,7 +4,7 @@
 The ability to calculate the least common multiple between two identical integers
 MathOps
 lcm
-project.LCMDriver
+CtrlAltElite.testCaseExecutables.LCMDriver
 20
 20
 20

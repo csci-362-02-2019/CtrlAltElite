@@ -4,7 +4,7 @@
 The ability to calculate the least common multiple between 0 and another integer.
 MathOps
 lcm
-project.LCMDriver
+CtrlAltElite.testCaseExecutables.LCMDriver
 0
 50
 ERROR
