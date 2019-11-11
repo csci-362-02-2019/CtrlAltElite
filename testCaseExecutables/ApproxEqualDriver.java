@@ -1,21 +1,19 @@
 package project;
 
 /*
-Driver for argMin method
- */
-import java.util.List;
+Driver for gcd method
+*/
 
-
-public class ArgMaxDriver {
+public class ApproxEqualDriver {
 
     public static void main(String[] args) {
         if (args.length != 2) {
             System.out.println(TestingConstants.ERROR_MESSAGE);
         } else {
             try {
-                double[] entries = TestingMethods.parseDoubleArray(args[0]);
-                List<Integer> indices = TestingMethods.parseIntList(args[1]);
-                System.out.println(MathOps.argMaxDouble(entries, indices));
+                double num1 = Double.parseDouble(args[0]);
+                double num2 = Double.parseDouble(args[1]);
+                System.out.println(MathOps.approxEqual(num1, num2));
             } catch (Exception e) {
                 System.out.println(TestingConstants.ERROR_MESSAGE);
             }
