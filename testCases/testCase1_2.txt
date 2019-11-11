@@ -4,7 +4,7 @@
 The ability to calculate the greatest common divisor betwee two identical integers
 MathOps
 gcd
-project.GCDDriver
+CtrlAltElite.testCaseExecutables.GCDDriver
 20
 20
 20

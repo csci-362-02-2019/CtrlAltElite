@@ -4,7 +4,7 @@
 The ability to calculate the least common multiple in an edge case scenario that verifies correctness in the most extreme of cases with one positive and one negative
 MathOps
 lcm
-project.LCMDriver
+CtrlAltElite.testCaseExecutables.LCMDriver
 2147483647
 -2147483647
 2147483647

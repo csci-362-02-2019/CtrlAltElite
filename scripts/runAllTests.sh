@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# changes directory to this script's parent directory
 cd "`dirname \"$0\"`/"..
 
-# compiles all java files in the project directory
-javac project/*.java
+find . -name "*.java" | xargs javac
 
 # defines the file we are writing output to
-FILE="./results.html"
+FILE="reports/results.html"
 
 # removes the previous results file if it exists
 rm -r $FILE 
@@ -15,7 +13,7 @@ rm -r $FILE
 # writing html stuff into results.html
 echo "<html>" >> $FILE
 echo "<style>" >> $FILE
-echo `cat style.css` >> $FILE
+echo `cat scripts/style.css` >> $FILE
 echo "</style> " >> $FILE
 echo "<h2>TEST REPORT</h2><br/>" >> $FILE
 
@@ -40,7 +38,9 @@ for fileName in testCases/testCase*.txt; do
 	param2=`sed '9q;d' $fileName`
 	oracle=`sed '10q;d' $fileName`
 	
+	cd ..
 	result=`java $driver "$param1" "$param2"`
+	cd CtrlAltElite
 
 	echo "<tr>" >> $FILE
 	echo "<td>$testID</td>" >> $FILE

@@ -4,7 +4,7 @@
 The ability to calculate the greatest common divisor between two negative integers
 MathOps
 lcm
-project.LCMDriver
+CtrlAltElite.testCaseExecutables.LCMDriver
 -10
 -1000
 1000

@@ -4,7 +4,7 @@
 The ability to calculate the greatest common divisor between two positive integers where the first is greater than the second
 MathOps
 gcd
-project.GCDDriver
+CtrlAltElite.testCaseExecutables.GCDDriver
 30
 12
 6
