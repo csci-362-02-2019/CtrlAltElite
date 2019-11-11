@@ -1,21 +1,19 @@
 package project;
 
 /*
-Driver for argMin method
+Driver for lcm method
  */
-import java.util.List;
 
-
-public class ArgMaxDriver {
+public class LCMDriver {
 
     public static void main(String[] args) {
         if (args.length != 2) {
             System.out.println(TestingConstants.ERROR_MESSAGE);
         } else {
             try {
-                double[] entries = TestingMethods.parseDoubleArray(args[0]);
-                List<Integer> indices = TestingMethods.parseIntList(args[1]);
-                System.out.println(MathOps.argMaxDouble(entries, indices));
+                int num1 = Integer.parseInt(args[0]);
+                int num2 = Integer.parseInt(args[1]);
+                System.out.println(MathOps.lcm(num1, num2));
             } catch (Exception e) {
                 System.out.println(TestingConstants.ERROR_MESSAGE);
             }
