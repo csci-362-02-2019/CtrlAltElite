@@ -7,10 +7,10 @@ find . -name "*.java" | xargs javac
 cd ..
 
 # defines the file we are writing output to
-FILE="TestAutomation/reports/results.html"
+FILE="TestAutomation/reports/testReport.html"
 
 # removes the previous results file if it exists
-rm -r $FILE 
+rm -f $FILE 
 
 # writing html stuff into results.html
 echo "<html>" >> $FILE
